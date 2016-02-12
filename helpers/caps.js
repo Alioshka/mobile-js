@@ -24,3 +24,12 @@ exports.androidRealDeviceNative = {
     deviceName: 'Android',
     app:  path.resolve('apps/ContactManager.apk')
 };
+
+exports.iosSimulatorNative = {
+    browserName: '',
+    'appium-version': '1.4.13',
+    platformName: 'iOS',
+    platformVersion: '8.4',
+    deviceName: 'iPad 2',
+    app: path.resolve('apps/TestApp.app')
+};
