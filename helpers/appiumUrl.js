@@ -1,0 +1,1 @@
+exports.hub = 'http://localhost:4444/wd/hub';

@@ -12,7 +12,8 @@ describe("ios simple calculator", function () {
     var driver;
 
     before(function () {
-        driver = wd.promiseChainRemote('localhost',4444);
+        var appiumUrl = require('../helpers/appiumUrl').hub;
+        driver = wd.promiseChainRemote(appiumUrl);
         var desired = require("../helpers/caps").iosSimulatorNative;
         return driver
             .init(desired)

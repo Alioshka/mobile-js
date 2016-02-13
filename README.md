@@ -1,3 +1,9 @@
+### Prerequisites
+Here you can find a helpful links how to setting up required environments for drive your texts through [Appium]:
+* https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/running-tests.md
+* http://developer.android.com/intl/ru/sdk/installing/index.html?pkg=tools
+* http://spring.io/guides/gs/android/
+
 # Use Git
 
 Open a command window and run:
@@ -78,3 +84,10 @@ $ mocha native/android.js
 ```
 to run tests on Android real device
 (don't forget to connect device to PC through USB, and device should be connected to Wifi)
+
+```sh
+$ mocha native/ios.js
+```
+to run tests on iOS Simulator
+
+[Appium]: <https://github.com/appium/appium/blob/master/README.md>
