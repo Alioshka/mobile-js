@@ -90,4 +90,34 @@ $ mocha native/ios.js
 ```
 to run tests on iOS Simulator
 
+### [Allure] result report:
+
+*  install [Allure] for work with tests result report:
+```sh
+$ npm install -g allure-commandline
+```
+
+*  download the necessary binaries:
+```sh
+$ webdriver-manager update
+```
+
+*  run tests:
+```sh
+$ protractor protractor/desktop-conf.js
+```
+
+*  after tests executed generate HTML report using Allure CLI:
+```sh
+$ allure generate test-reports/allure-result -o test-reports/allure-report
+```
+
+*  open the report using Allure CLI(will open report in Browser):
+```sh
+$ allure report open -o test-reports/allure-report
+```
+
+[Allure]: <https://github.com/appium/appium/blob/master/README.md>
+
 [Appium]: <https://github.com/appium/appium/blob/master/README.md>
+
